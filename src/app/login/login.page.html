@@ -1,0 +1,34 @@
+
+
+<ion-content>
+  <div id="header">
+    <img id="logo" src="assets/imgs/bmi.png"> 
+  </div>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title><b>Login</b></ion-card-title>
+
+      <ion-item fill="solid">
+        <ion-label id="email" position="floating">Email</ion-label>
+        <ion-input type="email" placeholder="abcd@example.com"></ion-input>
+        <ion-note slot="error">Invalid email</ion-note>
+      </ion-item>
+      <ion-item fill="solid">
+        <ion-label id="pass" position="floating">Password</ion-label>
+        <ion-input type="password" placeholder="*********"></ion-input>
+        <ion-note slot="error">Invalid email</ion-note>
+      </ion-item>
+      <div class="signup">
+        <a href="./signup.page.html">Create Account</a>
+      </div>
+
+    </ion-card-header>
+      <div class="button">
+        <ion-button expand="block" shape="round"><ion-icon name="log-in-outline"></ion-icon>Login</ion-button>
+        <ion-button expand="block" shape="round"><ion-icon name="logo-google"></ion-icon>Google</ion-button>
+      </div>
+      
+  </ion-card>
+
+</ion-content>

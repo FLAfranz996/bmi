@@ -1,0 +1,7 @@
+{
+  "name": "GetYourBMI",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

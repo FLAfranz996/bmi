@@ -1,0 +1,64 @@
+<ion-header [translucent]="true">
+  <ion-toolbar style="--background: #14279B;">
+    <ion-title style="color: white;">
+      GET YOUR BMI
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" style="--background: #E6E6E6;">
+
+    <div style="text-align: center; margin-right: 50px;">
+      <ion-img id= "img" style="height: 300px; width: 300px;"src="../../assets/imgs/bmi.png"></ion-img>
+    </div>
+
+    <div class="inputs">
+
+      <ion-item>
+        <ion-label style="--color: #14279B;" position="stacked"><b>Height (in meters) </b></ion-label>
+        <ion-input style="--color: #14279B;" placeholder="Enter your Height" type = "number" [(ngModel)] = "height" ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label  style="--color: #14279B;" position="stacked"><b>Weight (in kilograms) </b></ion-label>
+        <ion-input  style="--color: #14279B;" placeholder="Enter your Weight" type = "number" [(ngModel)] = "weight"></ion-input>
+      </ion-item>
+
+    </div>
+
+    <div class="buttons">
+      <ion-button shape="round" expand="block" (click)="submit()"> CALCULATE </ion-button>
+      
+      <ng-template [ngIf] = "bmi < 18.5 && bmi != 0.00">
+        <div class="result" >
+          <p>Your Body Mass Index (BMI) is {{bmi | number: '1.2-2'}}.</p>
+          <p>You're in the <b>underweight</b> range.</p>
+        </div>
+      </ng-template>
+
+      <ng-template [ngIf] = "bmi > 18.49 && bmi < 25">
+        <div class="result" >
+          <p>Your Body Mass Index (BMI) is {{bmi | number: '1.2-2'}}.</p>
+          <p>You're in the <b>healthy</b> range.</p>
+        </div>
+      </ng-template>
+
+      <ng-template [ngIf] = "bmi > 24.9 && bmi < 30">
+        <div class="result" >
+          <p>Your Body Mass Index (BMI) is {{bmi | number: '1.2-2'}}.</p>
+          <p>You're in the <b>overweight</b> range.</p>
+        </div>
+      </ng-template>
+
+      <ng-template [ngIf] = "bmi > 29.9">
+        <div class="result" >
+          <p>Your Body Mass Index (BMI) is {{bmi | number: '1.2-2'}}.</p>
+          <p>You're in the <b>obese</b> range.</p>
+        </div>
+      </ng-template>
+
+    </div>
+
+    
+    
+</ion-content>
