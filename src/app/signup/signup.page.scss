@@ -1,0 +1,45 @@
+ion-toolbar {
+    display: flex;
+    --min-height: 30px !important;
+}
+ion-title {
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+    right: 50%;
+    position: center;
+}
+
+#logo {
+    position: absolute;
+    display: flex;
+    top: 3%;
+    left: 15%;
+    height: 250px; 
+    width: 250px;
+}
+ion-card {
+    top: 30%;
+    bottom: 40%;
+}
+
+ion-card-title {
+    bottom: 5px;
+    position: center;
+    text-align: center;
+}
+
+.button {
+    bottom: 50px;
+}
+
+ion-icon {
+    margin-right: 10px;
+}
+
+.signup {
+    text-align:center;
+    margin: 0.3rem 0.3rem 1 1;
+    font-size: 1rem;
+    
+}

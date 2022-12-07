@@ -1,9 +1,33 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>signup</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-  hello nesa
+  <div id="header">
+    <img id="logo" src="assets/imgs/bmi.png"> 
+  </div>
+
+  <ion-card style="--background: #5C7AEA;">
+    <ion-card-header>
+      <ion-card-title style="--color: white;"><h2><b>Sign Up</b></h2></ion-card-title>
+
+      <ion-item fill="solid">
+        <ion-label id="email" position="stacked">Email</ion-label>
+        <ion-input type="email" placeholder="abcd@example.com"></ion-input>
+        <ion-label id="email" position="stacked">Name</ion-label>
+        <ion-input type="email" placeholder="Enter your name"></ion-input>
+        <ion-label id="email" position="stacked">Password</ion-label>
+        <ion-input type="email" placeholder="Enter your password"></ion-input>
+        <ion-label id="email" position="stacked">Re-enter Password</ion-label>
+        <ion-input type="email" placeholder="Re-enter your password"></ion-input>
+      </ion-item>
+  
+
+    </ion-card-header>
+      <div class="button">
+        <ion-button style="--background: #5C7AEA;"expand="block" shape="round"><ion-icon name="log-out-outline"></ion-icon>Sign Up</ion-button>
+      </div>
+
+      <div class="signup" style="color: white;">
+       <p>Already a Member?<a style="color: white;" href="./signup.page.html"> Login Here</a></p>
+       </div>
+      
+  </ion-card>
+
 </ion-content>
