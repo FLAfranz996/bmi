@@ -12,12 +12,12 @@ ion-title {
     position: absolute;
     top: 5%;
     left: 8%;
-    height: 300px; 
-    width: 300px;
+    height: 280px; 
+    width: 280px;
 
 }
 ion-card {
-    top: 38%;
+    top: 35%;
 }
 
 ion-card-title {
@@ -35,6 +35,11 @@ ion-icon {
 
 .signup {
     text-align: right;
-    margin: 0.3rem 0.3rem 0 0;
+    margin: 0.3rem 0.1rem 0 0;
     font-size: 1rem;
+}
+
+.with {
+    text-align: center;
+    
 }
