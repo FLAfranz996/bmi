@@ -1,8 +1,6 @@
-
-
 <ion-content>
   <div id="header">
-    <img id="logo" src="assets/imgs/bmi.png"> 
+    <img id="logo" src="assets/imgs/bmi.png">
   </div>
 
   <ion-card>
@@ -14,25 +12,27 @@
         <ion-input type="email" placeholder="abcd@example.com"></ion-input>
         <ion-note slot="error">Invalid email</ion-note>
       </ion-item>
+
       <ion-item fill="solid" expand="block" shape="round">
         <ion-label id="pass" position="floating">Password</ion-label>
         <ion-input type="password" placeholder="*********"></ion-input>
         <ion-note slot="error">Invalid email</ion-note>
       </ion-item>
+      
       <div class="signup">
-        <a href="./signup.page.html">Create Account</a>
+        <a href="./signup.page.html" (click)="create()">Create Account</a>
       </div>
 
     </ion-card-header>
-      <div class="button">
-        <ion-button expand="block" shape="round">Login</ion-button>
-        <div class="with">
-          <ion-label>- - - - - - Log in with - - - - - -</ion-label>
-        </div>
-        <ion-button expand="block" shape="round"><ion-icon name="logo-google"></ion-icon>Google</ion-button>
-        <ion-button expand="block" shape="round"><ion-icon name="logo-facebook"></ion-icon>Facebook</ion-button>
+    <div class="button">
+      <ion-button expand="block" shape="round" (click)="login()">Login</ion-button>
+      <div class="with">
+        <ion-label>- - - - - - Log in with - - - - - -</ion-label>
       </div>
-      
+      <ion-button expand="block" shape="round"><ion-icon name="logo-google"></ion-icon>Google</ion-button>
+      <ion-button expand="block" shape="round"><ion-icon name="logo-facebook"></ion-icon>Facebook</ion-button>
+    </div>
+
   </ion-card>
 
 </ion-content>
